@@ -1,6 +1,13 @@
-# Cafero-Wiki
+# HZ-Egine Wiki
 
-前置准备
+Publish
+
+```
+git clone https://github.com/LenromeCafero/hzengine-wiki.git
+docker compose up
+```
+
+DEV
 
 ```pnpm
 pnpm add -D vitepress
