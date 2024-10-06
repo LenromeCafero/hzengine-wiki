@@ -1,0 +1,11 @@
+version: "3"
+services:
+    vitepress:
+        image: xiaomaitx/hzegine-wiki
+        container_name: hzegine-wiki
+        ports:
+            - "3001:3000"
+        environment:
+            - NODE_ENV=development
+            - AUTH_KEY=sxc9c79wed # 设置 AUTH_KEY 环境变量
+
