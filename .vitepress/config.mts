@@ -1,5 +1,4 @@
 import { defineConfig } from "vitepress";
-import AutoSidebar from "vite-plugin-vitepress-auto-sidebar";
 import { generateSidebar } from "vitepress-sidebar";
 
 // https://vitepress.dev/reference/site-config
@@ -15,13 +14,6 @@ export default defineConfig({
 			},
 		],
 	],
-	// vite: {
-	// 	plugins: [
-	// 		AutoSidebar({
-	// 			path: "/wiki",
-	// 		}),
-	// 	],
-	// },
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
@@ -39,7 +31,6 @@ export default defineConfig({
 			useFolderTitleFromIndexFile: true,
 			sortMenusOrderNumericallyFromLink: true,
 			sortFolderTo: "bottom",
-			debugPrint: true,
 		}),
 		socialLinks: [
 			{ icon: "github", link: "https://github.com/LenromeCafero" },
@@ -51,7 +42,7 @@ export default defineConfig({
 		// feature
 		editLink: {
 			pattern:
-				"https://github.com/LenromeCafero/cafero-wiki/edit/main/:path",
+				"https://github.com/LenromeCafero/hzengine-wiki/edit/main/:path",
 			text: "在 GitHub 上编辑此页",
 		},
 		docFooter: {
