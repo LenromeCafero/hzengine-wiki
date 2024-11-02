@@ -4,8 +4,8 @@ layout: home
 
 hero:
   name: "HZ-Engine"
-  text: "还没想好的描述"
-  tagline: 欢迎来到 HZ-Engine
+  text: "腕上视觉小说引擎"
+  tagline: 腕间流光，携梦入虚境，情思缱绻，唯幻化为真。
   image:
     src: "/img/logo.png"
   actions:

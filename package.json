@@ -10,6 +10,8 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
+    "lxgw-wenkai-screen-webfont": "^1.7.0",
+    "shiki": "^1.22.2",
     "vite-plugin-vitepress-auto-sidebar": "^1.7.0"
   }
 }

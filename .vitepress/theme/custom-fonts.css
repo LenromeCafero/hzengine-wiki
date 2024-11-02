@@ -1,3 +1,4 @@
+@import url("../../node_modules/lxgw-wenkai-screen-webfont/style.css");
 /**
  * 使用自定义字体
  * -------------------------------------------------------------------------- */
@@ -10,6 +11,11 @@
 	font-style: normal;
 }
 
+
 body {
-	font-family: Roboto, "LXGW WenKai GB Screen", sans-serif;
+	font-family: "LXGW WenKai Screen", sans-serif;
+}
+
+.name,.title,.text {
+	font-family: "FusionPixel", sans-serif;
 }

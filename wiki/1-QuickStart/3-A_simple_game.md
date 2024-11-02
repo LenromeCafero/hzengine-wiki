@@ -1,6 +1,6 @@
 # 一个简单的游戏
 
-::: warning 提示
+::: warning 注意
 注意：本文档中 HZengine Script 的内容非最终版本，将随着设计完善而增加、修改甚至删除部分语法特性。
 :::
 
@@ -16,7 +16,7 @@ HZengine Script 是为了方便创作者开发视觉小说而生的专用脚本�
 
 HZengine Script 的剧本文件扩展名为 .hzs，一个项目中可以包含多个剧本文件。
 
-hzs文件的存放目录为 assets/project/script，在此之外的 hzs 文件不会被加载。
+hzs文件的存放目录为 project/script，在此之外的 hzs 文件不会被加载。
 
 ## 一个简单的游戏
 
