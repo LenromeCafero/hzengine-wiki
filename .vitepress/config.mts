@@ -11,7 +11,7 @@ export default defineConfig({
       "link",
       {
         rel: "icon",
-        href: "/static/Cafero_avatar_320x320_transparent.png",
+        href: "/static/icon.png",
       },
     ],
   ],
