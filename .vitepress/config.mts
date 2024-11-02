@@ -53,4 +53,7 @@ export default defineConfig({
 			provider: "local",
 		},
 	},
+	markdown: {
+		lineNumbers: true
+	}
 });

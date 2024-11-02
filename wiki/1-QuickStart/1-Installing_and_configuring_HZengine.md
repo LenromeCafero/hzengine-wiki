@@ -24,12 +24,8 @@ npm -v
 
 打开终端，输入以下命令
 
-```sh
+```bash
 npm i hzengine-cli -g
-```
-
-```
-npm install -g @cuberqaq/path-polyfill
 ```
 
 这条命令将把 HZengine CLI 全局安装到你的电脑上，它提供了创建项目、打包游戏等基本功能。

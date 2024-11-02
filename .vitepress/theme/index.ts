@@ -3,7 +3,7 @@ import { h } from "vue";
 import type { Theme } from "vitepress";
 import DefaultTheme from "vitepress/theme";
 import "./style.css";
-import "./custom-fonts.css";
+import "https://cdn.jsdelivr.net/npm/cn-fontsource-lxgw-wen-kai-gb-screen@1.0.6/font.min.css";
 
 export default {
 	extends: DefaultTheme,

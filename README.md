@@ -39,7 +39,7 @@ docker run -d --name hzengine-wiki -p 3001:3000 -e NODE_ENV=development xiaomait
 ### Docker Compose
 
 ```bash
-git clone https://github.com/LenromeCafero/hzengine-wiki.gi
+git clone https://github.com/LenromeCafero/hzengine-wiki.git
 
 # 运行
 docker compose up
