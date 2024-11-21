@@ -1,8 +1,12 @@
 # HZ-Engine Wiki
 
-目前尚未选好文档域名，暂时使用如下 Demo 链接预览文档
+正式版文档
 
-https://oascu82.demo.xiaomaitx.com/
+https://hzengine.cafero.town/
+
+Dev 分支文档
+
+https://hzengine-beta.cafero.town/
 
 ## 贡献指南
 
