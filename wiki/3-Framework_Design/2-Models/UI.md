@@ -1,6 +1,24 @@
 # UI 界面模块
 
-HZengine 的界面系统由**图层(layer)**和**视图(view)**组成。
+HZ-Engine 的界面系统主要由 **Layer(图层)** ，**View(视图)** 和 **Router(路由)** 组成。
+
+## 设计思路
+
+### Layer 图层
+HZ-Engine 首先将游戏画面划分为多个 Layer，Layer 具有 z_index 属性，用来确定在屏幕上显示的堆叠顺序。
+
+Layer 有 name 和 z_index 两个基本属性。
+
+内置的 Layer 有：
+- 显示背景图片、CG的 `bg` (Background) 背景层
+- 显示人物立绘和道具图片的 `fg` (Foreground) 前景层
+- 显示互动界面如人物对话、选择分支菜单的 `ct` (Control) 控制层
+- 显示快捷菜单、设置页面等临时浮动于所有其它页面上方的 `overlay` 覆盖层
+从上到下，z_index 逐渐增大。
+
+### View 视图
+View 在 HZ-Engine 中指有特定功能的页面的一部分。比如显示人物立绘的 
+
 
 #### layer 和 view 简介
 
