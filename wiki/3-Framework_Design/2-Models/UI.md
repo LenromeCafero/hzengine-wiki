@@ -38,10 +38,8 @@ View 组合一个或多个基本控件，用来实现较单一的功能。例如
 
 #### hz.ui 如何管理 view
 
-由于一个 view 应当可以被多次实例化，并在一个界面上同时显示多个相同的 view，所以创作者提供一个 name 用于区分不同类型的 view，并提供 view 的创建、销毁、更新的方法。 注册一个 view 的方法类似：
 
-<pre class="language-ts"><code class="lang-ts"><strong>function registerView(name: string, opt: {create: (init_props) => ViewInstance, update: (new_props, instance) => void, destroy: (instance) => void}): void
-</strong></code></pre>
+
 
 然后提供一个类似下面的，用于实例化 view 的方法。这将在指定的图层上显示这个 view 实例
 
