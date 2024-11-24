@@ -5,9 +5,11 @@ HZ-Engine 的界面系统主要由 **Layer(图层)** ，**View(视图)** 和 **R
 ## 设计思路
 
 ### Layer 图层
-HZ-Engine 首先将游戏画面划分为多个 Layer，Layer 具有 z_index 属性，用来确定在屏幕上显示的堆叠顺序。
+HZ-Engine 首先将游戏画面划分为多个 Layer。
 
-Layer 有 name 和 z_index 两个基本属性。
+Layer 有 name 和 z_index 两个基本属性。z_index 用于确定在屏幕上的堆叠顺序。
+
+Layer 用来容纳 View 的实例，从而控制其显示层级。
 
 内置的 Layer 有：
 * `bg`：背景层。显示 cg、其它背景图片、或者视频等
@@ -15,32 +17,24 @@ Layer 有 name 和 z_index 两个基本属性。
 * `ct`：控制层。显示对话框、菜单按钮（比如自动、向前翻页、向后翻页、设置）、分支选项菜单等
 * `overlay`：浮动层。显示设置界面、模态框、浮动按钮等平常不显示，但显示时需要覆盖在 ct 之上的视图
 
+从上到下，z_index 依次增大。
+
+#### 平台实现
+##### Zepp OS
+由`VIEW_CONTAINER`实现，请注意该类控件的数量限制。
+##### Web
+由 div 元素实现。
+
 ### View 视图
 
 View 组合一个或多个基本控件，用来实现较单一的功能。例如：
 
 * `say`：对话框。角色对话时显示的 view，通过给定的角色名称和对话内容，以对话框的形式显示在屏幕上。这个 view 可以包含一个 img 控件作为对话框背景，两个 text 控件分别显示角色名称和对话内容。
-* `choice`：分支选择菜单。由多个 button 控件组成，分别指向不同的剧情分支等。
-* `image`：这个 view 只包含一个 img 控件，用于显示人物立绘、背景等
+* `menu`：分支选择菜单。由多个 button 控件组成，分别指向不同的剧情分支等。
+* `fg_img`：这个 view 只包含一个 img 控件，用于显示人物立绘
+* `bg_img`：同上，用于显示背景图片
 
-每个 layer 可以包含多个 view 的实例，比如在`fg`layer 中同时包含两个`image`view 实例，来同时显示两个人物的立绘。这要求 view 本身是无状态的，且其被创建或更新时的逻辑无副作用。
-
-#### layer 和 view 简介
-
-layer 可以对应`hmUI.widget.VIEW_CONTAINER`，是 ZeppOS 控件的容器，用于保证控件在 z 轴上堆叠时有正确顺序。
-
-内置的 layer 有
-
-* `bg`：背景层。显示 cg、其它背景图片、或者视频等
-* `fg`：前景层。显示人物立绘、或者一些需要在背景上方的图片（比如在对话中展示一个宝箱中发现的道具的图片）
-* `ct`：控制层。显示对话框、菜单按钮（比如自动、向前翻页、向后翻页、设置）、分支选项菜单等
-* `overlay`：浮动层。显示设置界面、模态框、浮动按钮等平常不显示，但显示时需要覆盖在 ct 之上的视图
-
-
-
-#### hz.ui 如何管理 layer
-
-`hz.ui`维护一个`layerList`，提供如`addLayer(name)`、`getLayerList()`等方法。创建 layer 需要指定 z\_order
+每个 layer 可以包含多个 view 的实例，比如在`fg`layer 中同时包含两个`fg_img` view 实例，来同时显示两个人物的立绘。
 
 #### hz.ui 如何管理 view
 
