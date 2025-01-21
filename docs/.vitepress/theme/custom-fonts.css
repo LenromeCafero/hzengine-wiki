@@ -1,4 +1,3 @@
-@import url("../../node_modules/lxgw-wenkai-screen-webfont/style.css");
 /**
  * 使用自定义字体
  * -------------------------------------------------------------------------- */
@@ -10,7 +9,6 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
 
 body {
 	font-family: "LXGW WenKai Screen", sans-serif;
