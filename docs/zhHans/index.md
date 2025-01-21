@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 快速开始
-      link: /docs/zh/wiki/1-QuickStart/1-Installing_and_configuring_HZengine
+      link: /wiki
     - theme: alt
       text: 编辑文档
       link: https://github.com/LenromeCafero/hzengine-wiki

@@ -10,7 +10,7 @@
 
 你可以打开命令行，使用以下命令检查环境是否正确配置
 
-```bash
+```sh
 zeus -v
 ```
 
@@ -42,7 +42,7 @@ hze create hello-hzengine
 
 接下来，你应该看见一个如下图所示的列表，请选择一个初始项目模板（虽然就只有一个），这里我们选择 Template Project，回车确定，就能创建一个实例项目。
 
-<figure><img src="/static/image/image2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="/static/image/image (1).png" alt=""><figcaption></figcaption></figure>
 
 一切就绪
 
