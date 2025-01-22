@@ -8,6 +8,5 @@ node_modules
 package.json
 pnpm-lock.yaml
 project_structure.txt
-public
 README.md
-wiki
+docs

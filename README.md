@@ -23,9 +23,8 @@ https://hzengine-beta.cafero.town/
 | `package.json`       | Node.js 项目的配置文件，包含项目依赖和脚本等信息。 |
 | `pnpm-lock.yaml`     | pnpm 的锁定文件，确保依赖的版本一致。          |
 | `project_structure.txt` | 项目结构的文本说明文件，描述项目的组成部分。    |
-| `public`             | 存放静态文件（如图片、字体等）的目录，通常在构建时会被引用。 |
 | `README.md`          | 项目的自述文件，提供项目的基本信息和使用说明。   |
-| `wiki`               | 项目相关的文档和知识库，通常用于存放更详细的说明。 |
+| `docs`               | VitePress 站点的项目根目录   |
 
 
 ### 规范贡献流程
@@ -72,7 +71,7 @@ services:
 ## 开发
 
 ### 安装开发环境
-
+[安装pnpm](https://pnpm.io/zh/installation)
 ```bash
 pnpm add -D vitepress
 pnpm install
