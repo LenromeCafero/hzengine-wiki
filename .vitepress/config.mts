@@ -24,15 +24,17 @@ export default defineConfig({
     sidebarMenuLabel: "目录",
     outlineTitle: "文章导航",
     returnToTopLabel: "返回顶部",
-    sidebar: generateSidebar({
-      /* Options... */
-      documentRootPath: "/",
-      scanStartPath: "/wiki",
-      useTitleFromFileHeading: true,
-      useFolderTitleFromIndexFile: true,
-      sortMenusOrderNumericallyFromLink: true,
-      sortFolderTo: "bottom",
-    }),
+    sidebar: generateSidebar([
+      {
+        documentRootPath: ".",
+        scanStartPath: "wiki",
+        resolvePath: "/wiki/",
+        useTitleFromFileHeading: true,
+        useFolderTitleFromIndexFile: true,
+        sortMenusOrderNumericallyFromLink: true,
+        sortFolderTo: "bottom",
+      },
+    ]),
     socialLinks: [{ icon: "github", link: "https://github.com/LenromeCafero" }],
     footer: {
       message: "",
