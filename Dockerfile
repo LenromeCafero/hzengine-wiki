@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm add -D vitepress vue
+RUN npm install
 
 EXPOSE 3000
 
